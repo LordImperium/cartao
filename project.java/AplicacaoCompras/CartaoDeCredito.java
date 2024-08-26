@@ -47,6 +47,8 @@ public class CartaoDeCredito {
     }
 
     public void setCompras(List<Compra> compras) {
+        System.out.println("Texte");
         this.compras = compras;
     }
+   
 }
