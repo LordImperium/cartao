@@ -23,8 +23,6 @@ public class Principal {
 
             if (compraRealizada) {
                 System.out.println("Compra realizada!");
-                System.out.println("Digite 0 para sair ou 1 para continuar");
-                sair = leitura.nextInt();
             } else {
                 System.out.println("Saldo insuficiente!");
                 sair = 0;
@@ -33,7 +31,7 @@ public class Principal {
 
         System.out.println("***********************");
         System.out.println("COMPRAS REALIZADAS:\n");
-    
+        Collections.sort(cartao.getCompras());
         for (Compra c : cartao.getCompras()) {
             System.out.println(c.getDescricao() + " - " +c.getValor());
         }
